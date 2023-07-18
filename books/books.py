@@ -74,7 +74,7 @@ def request(flow: http.HTTPFlow) -> None:
         ctx.master.shutdown()
 
 
-def get_readbook(headers, finish=True):
+def get_readbook(headers):
     url = "https://i.weread.qq.com/mine/readbook"
 
     params = dict(vid=headers['vid'], star=0, yearRange="0_0", count=200, rating=0, listType=1)
